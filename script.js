@@ -90,7 +90,7 @@ document.getElementById('monFormulaire').addEventListener('submit', function(eve
   //S'assurer que le mot de passe est securitaire(1 maj,1 min,1 chiffre,1 char special et min 8 char)
   function validationMDP(value) 
   {
-    return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&,. ])[A-Za-z\d@$!%*?&]{8,}$/.test(value);
+    return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&,. ])[A-Za-z\d@$!%*?&., ]{8,}$/.test(value);
   }
   //Vérifie si le formulaire contient une erreur
   function contientErreur() 
