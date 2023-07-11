@@ -80,7 +80,7 @@ document.getElementById('monFormulaire').addEventListener('submit', function(eve
   //S'assurer que les entrées dans les champ nom et prenom sois bien des Lettre
   function estAlphabetique(value) 
   {
-    return /^[A-Za-z]+$/.test(value);
+    return /^[A-Za-z -]+$/.test(value);
   }
   //S'assurer que se sois bien un email qui est entrée
   function emailValide(value) 
